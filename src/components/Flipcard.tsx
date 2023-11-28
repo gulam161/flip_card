@@ -27,7 +27,7 @@ const Flipcard: React.FC = () => {
     <ReactCardFlip flipDirection="horizontal" isFlipped={flipcard}>
       <div
         onClick={handleFlipCard}
-        className="w-[40%] md:w-[60%] sm:w-[95%] lg-[75%] mx-auto border shadow-xl  rounded-md bg-white  font-bold "
+        className="w-[40%] md:w-[60%] sm:w-[98%] sm:mt-20 lg-[75%] mx-auto mt-48 border shadow-xl  rounded-md bg-white  font-bold "
         ref={frontCardRef}
       >
         <div className="relative pb-20">
@@ -100,7 +100,7 @@ const Flipcard: React.FC = () => {
       <div
         onClick={handleFlipCard}
         // style={{ height: `${height}px`, width: `${width}px` }}
-        className=" mx-auto border shadow-lg  rounded-b-md bg-white font-bold pb-5 mt-48 sm:mt-10"
+        className="  mx-auto border shadow-lg  rounded-b-md bg-white font-bold pb-5 mt-48 sm:mt-20"
       >
         <img
           src={image_1}
