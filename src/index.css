@@ -10,12 +10,18 @@
   height: 1.7rem !important;
 }
 .gradient {
-  background: rgb(0, 12, 41);
+  background: rgb(21, 80, 110);
   background: linear-gradient(
-    178deg,
-    rgba(0, 12, 41, 1) 0%,
-    rgba(187, 166, 137, 1) 56%,
-    rgba(65, 61, 32, 1) 98%,
-    rgba(37, 32, 7, 1) 98%
+    0deg,
+    rgba(21, 80, 110, 0.9360119047619048) 0%,
+    rgba(100, 155, 198, 1) 100%
+  );
+}
+.gradient:hover {
+  background: rgb(9, 59, 84);
+  background: linear-gradient(
+    0deg,
+    rgba(9, 59, 84, 0.9360119047619048) 0%,
+    rgba(100, 152, 194, 1) 100%
   );
 }

@@ -27,7 +27,7 @@ const Flipcard: React.FC = () => {
     <ReactCardFlip flipDirection="horizontal" isFlipped={flipcard}>
       <div
         onClick={handleFlipCard}
-        className="w-[40%] md:w-[60%] sm:w-[95%] lg-[75%] mx-auto border box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; rounded-md bg-white text-white font-bold "
+        className="w-[40%] md:w-[60%] sm:w-[95%] lg-[75%] mx-auto border shadow-xl  rounded-md bg-white  font-bold "
         ref={frontCardRef}
       >
         <div className="relative pb-20">
@@ -35,7 +35,7 @@ const Flipcard: React.FC = () => {
           <img
             src={myImage}
             alt="Developer_Gulam"
-            className="rounded-full w-36 absolute bottom-1 right-3 border-4 border-white"
+            className="rounded-full w-36 absolute bottom-1 right-6 border-4 border-white"
           />
         </div>
         <div className="flex flex-col  px-3 font-sans">
@@ -66,29 +66,41 @@ const Flipcard: React.FC = () => {
             software development. Possesses strong communication, collaboration,
             and technical documentation skills.
           </p>
+          <div className="w-12 p-[1px] rounded-md bg-gray-500 mt-7 ml-1 "></div>
         </div>
 
-        <div className="px-3 mt-7">
-          <a
-            href="https://www.linkedin.com/in/murtuza-g/"
-            target="_blank"
-            className="px-12 py-2 font-semibold rounded-full bg-[#0a66c2] "
-          >
-            More
-          </a>
+        <div className="px-3 mt-10 relative">
+          <p className="social  absolute right-8">
+            <a
+              href="https://www.linkedin.com/in/murtuza-g/"
+              className="hover:text-sky-900"
+            >
+              <LinkedInIcon />
+            </a>
+            <a
+              href="https://api.whatsapp.com/send?phone=919336938754"
+              className="hover:text-green-600"
+            >
+              <WhatsAppIcon />
+            </a>
+            <a href="https://github.com/gulam161">
+              <GitHubIcon />
+            </a>
+          </p>
         </div>
-        {/* <div className="gradient py-1 mt-10 rounded-b-md text-center font-medium">
-          <a href="https://www.linkedin.com/in/murtuza-g/" className="">
-            Check
-          </a>
-        </div> */}
+        <a
+          href="https://www.linkedin.com/in/murtuza-g/"
+          className="gradient block mt-28 py-2  rounded-b-md text-white text-center font-medium"
+        >
+          Check
+        </a>
       </div>
 
       {/* Back card */}
       <div
         onClick={handleFlipCard}
         // style={{ height: `${height}px`, width: `${width}px` }}
-        className=" mx-auto border box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px rounded-b-md bg-white font-bold pb-5 mt-48 sm:mt-10"
+        className=" mx-auto border shadow-lg  rounded-b-md bg-white font-bold pb-5 mt-48 sm:mt-10"
       >
         <img
           src={image_1}
