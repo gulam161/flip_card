@@ -1,27 +1,68 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fasthand&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-.social {
-  @apply flex gap-7 text-gray-800;
+:root {
+  --primary: #6366f1;
+  --primary-hover: #4f46e5;
+  --secondary: #ec4899;
+  --accent: #00d2ff;
+  --bg-dark: #0f172a;
+  --card-bg: rgba(30, 41, 59, 0.7);
+  --text-primary: #f8fafc;
+  --text-secondary: #94a3b8;
+  --glass-border: rgba(255, 255, 255, 0.1);
+  --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 }
-.MuiSvgIcon-root {
-  width: 1.7rem !important;
-  height: 1.7rem !important;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Plus Jakarta Sans', sans-serif;
 }
-.gradient {
-  background: rgb(21, 80, 110);
-  background: linear-gradient(
-    0deg,
-    rgba(21, 80, 110, 0.9360119047619048) 0%,
-    rgba(100, 155, 198, 1) 100%
-  );
+
+body {
+  background-color: var(--bg-dark);
+  color: var(--text-primary);
+  overflow-x: hidden;
 }
-.gradient:hover {
-  background: rgb(9, 59, 84);
-  background: linear-gradient(
-    0deg,
-    rgba(9, 59, 84, 0.9360119047619048) 0%,
-    rgba(100, 152, 194, 1) 100%
-  );
+
+.cards {
+  @apply relative w-full max-w-[450px] mx-auto overflow-hidden;
+  background: var(--card-bg);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--glass-shadow);
+  border-radius: 24px;
+}
+
+.glass-morphism {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.2);
 }
