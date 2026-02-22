@@ -17,12 +17,12 @@ const ProfilePhoto = () => {
           size="2xl"
           src={profile}
           name="Mohsin Shaikh"
-          border="4px solid var(--primary)"
+          border="3px solid var(--primary)"
           p={1}
           bg="transparent"
           className="pointer-events-none"
           transition="all 0.3s"
-          _hover={{ transform: "scale(1.05)", borderColor: "var(--accent)" }}
+          _hover={{ transform: "scale(1.05)", borderColor: "var(--primary)" }}
         />
         <Icon
           as={RiVerifiedBadgeFill}
@@ -30,7 +30,7 @@ const ProfilePhoto = () => {
           bottom="2"
           right="2"
           fontSize="24px"
-          color="var(--accent)"
+          color="var(--primary)"
           bg="white"
           borderRadius="full"
           boxShadow="0 0 10px rgba(0,0,0,0.2)"

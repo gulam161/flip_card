@@ -12,7 +12,7 @@ const Flipcard = () => {
   };
 
   return (
-    <Box w="full" h={{ base: "auto", md: "85vh" }} minH={{ base: "550px", md: "700px" }} maxH="850px" position="relative">
+    <Box w="full" h={{ base: "auto", md: "85vh" }} minH={{ base: "550px", md: "800px" }} maxH="850px" position="relative">
       <ReactCardFlip
         flipDirection="horizontal"
         isFlipped={flipped}

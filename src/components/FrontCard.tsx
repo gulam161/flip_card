@@ -39,7 +39,7 @@ const FrontCard: React.FC<FrontCardProps> = ({ handleFlip }) => {
           <VStack spacing={1}>
             <HStack color="var(--text-secondary)">
               <Badge colorScheme="indigo" variant="outline" px={3} py={1} borderRadius="full" fontSize="xs" className="border border-indigo-500 font-light">
-                SWE | AI | Web3
+                SWE
               </Badge>
             </HStack>
             <Heading as="h1" fontSize="2xl" color="var(--text-primary)" letterSpacing="tight">
